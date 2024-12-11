@@ -8,7 +8,10 @@ export default {
     extend: {
       "fontFamily": {
         "comic": ['"Comic Neue"']
-      } 
+      },
+      backgroundImage : {
+        'body-background': ''
+      }
     },
   },
   plugins: [],
