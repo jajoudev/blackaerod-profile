@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-function Icons({ href, IconComponent, size, color, css }) {
+function Icons({ href, IconComponent, size, color }) {
   return (
     <ul>
-      <li className={css}>
+      <li>
         <a href={href} target="_blank">
           <IconComponent size={size} color={color} />
         </a>
