@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/images/blackaerod.png" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/images/blackaerod.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blackaerod - Profile</title>
     <link rel="stylesheet" href="/src/index.css" />
+    <link rel="stylesheet" href="/src/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,8 +18,12 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-black">
-    <div id="root"></div>
+  <body class="box-border">
+    <div
+      class="bg-black bg-body-background bg-cover bg-center fixed bg-no-repeat w-full -z-10"
+    >
+      <div id="root"></div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

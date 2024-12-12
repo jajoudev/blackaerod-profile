@@ -10,7 +10,7 @@ export default {
         "comic": ['"Comic Neue"']
       },
       backgroundImage : {
-        'body-background': ''
+        'body-background': "url('/src/assets/images/background.gif')"
       }
     },
   },
