@@ -1,5 +1,5 @@
-import BadLand from './audios/Badland.mp3'
-import Ping from "./audios/Ping.mp3"
+import BadLand from './music/Badland.mp3'
+import Ping from "./music/Ping.mp3"
 
 const musicList = [BadLand, Ping]
 
