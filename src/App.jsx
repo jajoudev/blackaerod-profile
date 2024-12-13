@@ -12,7 +12,7 @@ import BlackerodPic from "./assets/images/blackaerod.png";
 function App() {
   return (
     <>
-    <AudioPlayer />
+    <AudioPlayer css="opactiy-50" />
       <main className="min-h-screen flex items-center justify-center flex-col">
         <div className="backdrop-blur-lg w-2/4 text-center text-white rounded-md p-5">
           <img
@@ -27,19 +27,22 @@ function App() {
               href="https://www.youtube.com/channel/UC875nfp85GN3Kei0G0yT4bA"
               IconComponent={YoutubeIcon}
               size={40}
-              color="red"
+              color="white"
+              css="bg-red-500 rounded-full p-1 animate-pulse"
             />
             <Icons
               href="https://www.twitch.tv/blackaerod94"
               IconComponent={TwitchIcon}
               size={40}
-              color="purple"
+              color="white"
+              css="bg-purple-500 rounded-full p-1 animate-pulse"
             />
             <Icons
               href="https://www.tiktok.com/@blackaerod94"
               IconComponent={TiktokIcon}
               size={40}
-              color="#F62B52"
+              color="white"
+              css="bg-pink-600 rounded-full p-1 animate-pulse"
             />
           </div>
         </div>
