@@ -1,27 +1,35 @@
+import { useState } from "react";
+// Import music list
+import musicList from "../AudioPlayer/data.js";
+// Librairies
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 import ReactAudioPlayer from "react-audio-player";
 import PropTypes from "prop-types";
-import { useState } from "react";
-import musicList from "../AudioPlayer/data.js"
 
 function Audio({ css }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [currentIndex, setCurrentIndex] = useState(0)
+  function nextMusic() {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % musicList.length);
+  }
 
-    function handleMusicNext() {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % musicList.length)
-    }
-
+  function prevMusic() {
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % musicList.length);
+  }
 
   return (
-    <div className="p-5">
+    <div className="p-5 flex gap-5">
+      <FaArrowAltCircleLeft size={60} onClick={prevMusic} />
       <ReactAudioPlayer
         src={musicList[currentIndex]}
         autoPlay
         controls
         volume={0.5}
         className={css}
-        onEnded={handleMusicNext}
+        onEnded={nextMusic}
       />
+      <FaArrowAltCircleRight size={60} onClick={nextMusic} />
     </div>
   );
 }
