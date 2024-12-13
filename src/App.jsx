@@ -8,13 +8,10 @@ import Typewriter from "./components/TypewriterEffect/Typewriter";
 // Assets files
 import BlackerodPic from "./assets/images/blackaerod.png";
 import BadLandMusic from "./assets/audios/bad-land.mp3";
-import ParticlesEffect from "./components/Particles/ParticlesEffect";
 
 function App() {
   return (
     <>
-    <ParticlesEffect />
-
       <audio loop autoPlay src={BadLandMusic}></audio>
       <main className="min-h-screen flex items-center justify-center flex-col">
         <div className="backdrop-blur-lg w-2/4 text-center text-white rounded-md p-5">
