@@ -4,15 +4,15 @@ import { TwitchIcon, YoutubeIcon, TiktokIcon } from "hugeicons-react";
 // Components
 import Icons from "./components/SocialsIcons/Icons";
 import Typewriter from "./components/TypewriterEffect/Typewriter";
+import AudioPlayer from "./components/AudioPlayer/Audio";
 
 // Assets files
 import BlackerodPic from "./assets/images/blackaerod.png";
-import BadLandMusic from "./assets/audios/bad-land.mp3";
 
 function App() {
   return (
     <>
-      <audio loop autoPlay src={BadLandMusic}></audio>
+    <AudioPlayer />
       <main className="min-h-screen flex items-center justify-center flex-col">
         <div className="backdrop-blur-lg w-2/4 text-center text-white rounded-md p-5">
           <img
