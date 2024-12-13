@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 function Icons({ href, IconComponent, size, color, css }) {
   return (
     <ul>
-      
       <li className={css}>
         <a href={href} target="_blank">
           <IconComponent size={size} color={color} />
