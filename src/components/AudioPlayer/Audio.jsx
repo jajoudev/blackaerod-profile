@@ -19,7 +19,7 @@ function Audio({ css }) {
 
   return (
     <div className="p-5 flex gap-5">
-      <FaArrowAltCircleLeft size={40} onClick={prevMusic} className="animate-bounce mt-4" />
+      <FaArrowAltCircleLeft size={40} color="white" onClick={prevMusic} className="animate-bounce mt-4 cursor-pointer" />
       <ReactAudioPlayer
         src={musicList[currentIndex]}
         autoPlay
@@ -28,7 +28,7 @@ function Audio({ css }) {
         className={css}
         onEnded={nextMusic}
       />
-      <FaArrowAltCircleRight size={40} onClick={nextMusic}  className="animate-bounce mt-4" />
+      <FaArrowAltCircleRight size={40} onClick={nextMusic} color="white"  className="animate-bounce mt-4 cursor-pointer" />
     </div>
   );
 }
