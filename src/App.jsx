@@ -46,6 +46,8 @@ function App() {
             />
           </div>
         </div>
+
+        <p className="text-white font-bold">copyright | jajoudev 2024</p>
       </main>
     </>
   );
