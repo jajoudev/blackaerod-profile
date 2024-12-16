@@ -2,8 +2,7 @@ import { useState } from "react";
 // Import music list
 import musicList from "../AudioPlayer/data.js";
 // Librairies
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import ReactAudioPlayer from "react-audio-player";
 import PropTypes from "prop-types";
 
